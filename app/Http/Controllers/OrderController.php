@@ -26,12 +26,20 @@ class OrderController extends Controller
     public function show(){
         $i = 1;
         $sum = 0;
-        $orders = Order::all();
+        $orders = Order::orderBy('id', 'desc')->get();;
         return view('client.orders.show')
             ->with([
                 'orders' => $orders,
                 'i' =>$i,
                 'sum' => $sum
             ]);
+    }
+
+    public function update($id)
+    {
+        $order = Order::findOrFail($id);
+        $order->delivered_or = true;
+        $order->save();
+        return redirect()->route('ordersList')->with('flash_message', 'Söwda bolsun!');
     }
 }

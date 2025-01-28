@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DeliveryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +37,19 @@ Route::controller(OrderController::class)
         Route::get('order', 'index')->name('successOrder');
 
         Route::get('orderList', 'show')->name('ordersList');
+
+        Route::patch('/orderList/{id}', 'update')->name('updateOrder');
+
+    });
+
+//Route::patch('/orderList/{id}', function($id)
+//{
+//    return $id;
+//});
+
+Route::controller(DeliveryController::class)
+    ->group(function () {
+        Route::get('deliveryList', 'index')->name('deliveryList');
     });
 
 

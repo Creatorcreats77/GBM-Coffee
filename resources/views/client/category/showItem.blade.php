@@ -9,7 +9,7 @@
         <div class="row g-3 g-sm-2">
             @foreach($product_selected as $product)
                 <div class="col-12 col-lg-4">
-                    <img src="{{ asset('img/coffe.jpg') }}" class="card-img-top" alt="nothing">
+                    <img src="{{ asset('img/coffe.jpg') }}" class="card-img-top img-fluid" alt="nothing">
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="fw-bold">

@@ -1,11 +1,12 @@
-<footer class="bg-dark text-light">
-    <div class="container py-5">
+<footer class="bg-primary text-light">
+    <div class="container py-2">
         <div class="row">
             <div class="col-md-4 py-3 py-lg-1">
                 <h5>Satyjy üçin</h5>
                 <div >
                     <a href="{{route('create')}}" class="text-decoration-none text-light">Önüm goşmak</a><br>
                     <a href="{{route('createCat')}}" class="text-decoration-none text-light">Bölüm goşmak</a><br>
+                    <a href="{{route('deliveryList')}}" class="text-decoration-none text-light">Dastawka</a><br>
                     <a href="{{route('ordersList')}}" class="text-decoration-none text-light">Sargytlar</a>
                 </div>
             </div>

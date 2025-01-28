@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm" aria-label="Navbar">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm fixed-top" aria-label="Navbar">
     <div class="container-lg">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="http://192.168.1.115:5173/">
                 <i class="bi-cup-hot-fill"></i>
                 GBM Coffee
             </a>
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
+                    <a class="nav-link active" aria-current="page" href="http://192.168.1.115:5173/">
                         Baş Sahypa
                     </a>
                 </li>
